@@ -14,6 +14,7 @@ def firstNetwork():
 
     "Create an empty network and add nodes to it."
     net = Mininet()
+
     info( '*** Adding controller\n' )
     net.addController( 'c0' )
 
@@ -27,7 +28,6 @@ def firstNetwork():
     s14 = net.addSwitch( 's14' )
     s24 = net.addSwitch( 's24' )
     s34 = net.addSwitch( 's34' )
-
     
     info( '*** Creating links\n' )
     net.addLink( PC1, s14 )
@@ -38,7 +38,6 @@ def firstNetwork():
     net.addLink( PC4, s34 )
 
 
-    
     info( '*** Starting network\n')
     net.start()
 
