@@ -1,0 +1,62 @@
+
+###PC1-eth0
+
+#add ipv4 and ipv6 addresses
+PC1 ip addr add 10.10.10.1/24 dev PC1-eth0
+PC1 ip -6 addr add fd24:ec43:12ca:c001:10::1/80 dev PC1-eth0
+
+#delete ipv6 old address
+PC1 ip addr show
+PC1 ip addr del  <IPV6ADDR> dev PC1-eth0
+#delete ipv4 old address
+PC1 ip link set PC1-eth0 up
+PC1 ip addr del 10.0.0.1/8 dev PC1-eth0
+
+
+###PC2-eth0, PC3-eth0, PC4-eth0, PC4-eth1, PC4-eth2
+
+#PC2-eth0
+PC2 ip addr add 10.10.20.2/24 dev PC2-eth0
+PC2 ip -6 addr add fd24:ec43:12ca:c001:20::2/80 dev PC2-eth0
+PC2 ip addr del 10.0.0.2/8 dev PC2-eth0
+PC2 ip addr del <IPV6ADDR> dev PC2-eth0
+
+#PC3-eth0
+PC3 ip addr add 10.10.30.3/24 dev PC3-eth0
+PC3 ip -6 addr add fd24:ec43:12ca:c001:30::3/80 dev PC3-eth0
+PC3 ip addr del 10.0.0.3/8 dev PC3-eth0
+PC3 ip addr del<IPV6ADDR> dev PC3-eth0
+
+#PC4-eth0
+PC4 ip addr add 10.10.10.4/24 dev PC4-eth0
+PC4 ip -6 addr add fd24:ec43:12ca:c001:10::4/80 dev PC4-eth0
+PC4 ip addr del 10.0.0.4/8 dev PC4-eth0
+PC4 ip addr del <IPV6ADDR> dev PC4-eth0
+
+#PC4-eth1
+PC4 ip addr add 10.10.20.4/24 dev PC4-eth1
+PC4 ip -6 addr add fd24:ec43:12ca:c001:20::4/80 dev PC4-eth1
+#PC4 ip addr del 10.0.0.4/8 dev PC4-eth1
+PC4 ip addr del <IPV6ADDR> dev PC4-eth1
+
+#PC4-eth2
+PC4 ip addr add 10.10.30.4/24 dev PC4-eth2
+PC4 ip -6 addr add fd24:ec43:12ca:c001:30::4/80 dev PC4-eth2
+#PC4 ip addr del 10.0.0.4/8 dev PC4-eth2
+PC4 ip addr del <IPV6ADDR> dev PC4-eth2
+
+
+###default route 
+#PC1
+PC1 ip route add default via 10.10.10.4
+PC1 ip -6 route add default via fd24:ec43:12ca:c001:10::4
+#PC2
+PC2 ip route add default via 10.10.20.4
+PC2 ip -6 route add default via fd24:ec43:12ca:c001:20::4
+#PC3
+PC3 ip route add default via 10.10.30.4
+PC3 ip -6 route add default via fd24:ec43:12ca:c001:30::4
+
+###enable forwarding on PC4 (IPv4 and IPv6)
+PC4 echo 1 > /proc/sys/net/ipv4/ip_forward
+PC4 echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
