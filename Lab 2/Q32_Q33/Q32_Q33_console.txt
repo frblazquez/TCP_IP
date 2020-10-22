@@ -1,0 +1,36 @@
+mininet> r1 ping -c 1 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=110 time=24.3 ms
+
+--- 8.8.8.8 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 24.316/24.316/24.316/0.000 ms
+mininet> h1 ping -c 1 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=109 time=31.1 ms
+
+--- 8.8.8.8 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 31.136/31.136/31.136/0.000 ms
+mininet> h2 traceroute -I 8.8.8.8
+traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
+ 1  10.0.0.100 (10.0.0.100)  44.446 ms  25.153 ms  31.997 ms
+ 2  10.0.2.2 (10.0.2.2)  57.705 ms  66.974 ms  81.645 ms
+ 3  10.102.0.1 (10.102.0.1)  91.709 ms  100.843 ms  116.226 ms
+ 4  185.25.193.105 (185.25.193.105)  127.794 ms  147.485 ms  157.021 ms
+ 5  185.25.193.60 (185.25.193.60)  166.354 ms  190.201 ms  209.389 ms
+ 6  91.206.52.223 (91.206.52.223)  227.238 ms  228.535 ms  225.707 ms
+ 7  74.125.243.145 (74.125.243.145)  220.639 ms  214.246 ms  209.602 ms
+ 8  172.253.50.17 (172.253.50.17)  199.297 ms  192.925 ms  187.574 ms
+ 9  8.8.8.8 (8.8.8.8)  65.596 ms  70.906 ms  71.053 ms
+mininet> r1 traceroute -I 8.8.8.8
+traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
+ 1  10.0.2.2 (10.0.2.2)  14.481 ms  23.533 ms  24.547 ms
+ 2  10.102.0.1 (10.102.0.1)  29.184 ms  34.010 ms  39.268 ms
+ 3  185.25.193.105 (185.25.193.105)  49.704 ms  56.458 ms  61.546 ms
+ 4  185.25.193.60 (185.25.193.60)  66.780 ms  72.750 ms  85.512 ms
+ 5  91.206.52.223 (91.206.52.223)  10.706 ms  10.827 ms  10.902 ms
+ 6  * * *
+ 7  * * *
+ 8  8.8.8.8 (8.8.8.8)  6.125 ms  6.161 ms  5.740 ms
+mininet> 
