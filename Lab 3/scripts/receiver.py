@@ -1,30 +1,24 @@
 import sys
 import socket
+import struct
 
-SERVER      = sys.argv[1]
-PORT        = int(sys.argv[2])
-LAPSE_TIME  = 1
-
-
+GROUP =     sys.argv[1]
+PORT  = int(sys.argv[2])
+RECV_SIZE = 1024
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.connect((SERVER,PORT))
-#sock.setblocking(0)
-#sock.settimeout(LAPSE_TIME)
+#sock.connect((GROUP,PORT))
 
-message = "RESET:20"
-sock.sendall(message.encode())
+# https://stackoverflow.com/questions/603852/how-do-you-udp-multicast-in-python
+sock.bind((GROUP, PORT))
+mreq = struct.pack("4sl", socket.inet_aton(GROUP), socket.INADDR_ANY)
+sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
 
-lost = 0
-length = 1024	
-while True:
-	data = sock.recv(length)
-	if data:
-		break
-	else:
-		lost = lost + 1
-		time.sleep(LAPSE_TIME)
+data = sock.recv(RECV_SIZE).decode()
+#data = data[7:] #First six bytes are header
+while data:
+	# It's important to add flush flag for it to work!
+	print(data, flush=True)
+	data = sock.recv(RECV_SIZE).decode()
 
-print(data.decode())
-print(lost)
 sock.close()
