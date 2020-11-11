@@ -1,30 +1,18 @@
-import sys
 import socket
-
-SERVER      = sys.argv[1]
-PORT        = int(sys.argv[2])
-LAPSE_TIME  = 1
+import struct
+import sys
 
 
+GROUP 	= sys.argv[1]
+PORT 	= int(sys.argv[2])
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.connect((SERVER,PORT))
-#sock.setblocking(0)
-#sock.settimeout(LAPSE_TIME)
+gsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+gsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-message = "RESET:20"
-sock.sendall(message.encode())
+gsock.bind((GROUP, PORT))
 
-lost = 0
-length = 1024	
+mreq = struct.pack("4sl", socket.inet_aton(GROUP), socket.INADDR_ANY)
+gsock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
+
 while True:
-	data = sock.recv(length)
-	if data:
-		break
-	else:
-		lost = lost + 1
-		time.sleep(LAPSE_TIME)
-
-print(data.decode())
-print(lost)
-sock.close()
+  print (gsock.recv(10505))
