@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="en" class="yui3-js-enabled" lang="en"><head>
+    <title>[Graded]&nbsp;Lab3 - Part 1.2</title>
+    <link rel="shortcut icon" href="https://moodle.epfl.ch/theme/image.php/epfl/theme/1604590163/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, [Graded]&nbsp;Lab3 - Part 1.2">
+<link rel="stylesheet" type="text/css" href="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/yui_combo.css"><script async="" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/analytics.js"></script><script charset="utf-8" id="yui_3_17_2_1_1604856325177_8" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/yui_combo_002.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1604856325177_18" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/flags.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1604856325177_96" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/qengine.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1604856325177_97" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/module_002.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1604856325177_98" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/yui_combo.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1604856325177_99" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/module.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/all.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.epfl.ch","sesskey":"nHocxmZDUy","themerev":"1604590163","slasharguments":1,"theme":"epfl","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1604590163","admin":"admin","svgicons":true,"usertimezone":"Europe\/Zurich","contextid":2669301};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.epfl.ch\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.epfl.ch\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.epfl.ch\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.epfl.ch\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.epfl.ch\/theme\/yui_combo.php?m\/1604590163\/","combine":true,"comboBase":"https:\/\/moodle.epfl.ch\/theme\/yui_combo.php?","ext":false,"root":"m\/1604590163\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.epfl.ch\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.epfl.ch\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1604590163\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script><script>try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1760 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 990 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (X11)" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
+                    } catch (e) {}
+                    
+            try {
+                window.screenY = 0
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = 957
+            } catch (e) { }
+        
+            try {
+                window.screenX = 0
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = 1745
+            } catch (e) { }
+        </script>
+<link href="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/css.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1760 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 990 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (X11)" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
+                    } catch (e) {}
+                    
+            try {
+                window.screenY = 0
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = 957
+            } catch (e) { }
+        
+            try {
+                window.screenX = 0
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = 1745
+            } catch (e) { }
+        </script><script>try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1760 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 990 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (X11)" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
+                    } catch (e) {}
+                    
+            try {
+                window.screenY = 0
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = 957
+            } catch (e) { }
+        
+            try {
+                window.screenX = 0
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = 1745
+            } catch (e) { }
+        </script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/first.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/jquery-3.js"></script><script>try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1760 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 990 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (X11)" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
+                    } catch (e) {}
+                    
+            try {
+                window.screenY = 0
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = 957
+            } catch (e) { }
+        
+            try {
+                window.screenX = 0
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = 1745
+            } catch (e) { }
+        </script><script>try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1760 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 990 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (X11)" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
+                    } catch (e) {}
+                    
+            try {
+                window.screenY = 0
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = 957
+            } catch (e) { }
+        
+            try {
+                window.screenX = 0
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = 1745
+            } catch (e) { }
+        </script></head>
+<body id="page-mod-quiz-review" class="format-weeks path-mod path-mod-quiz gecko dir-ltr lang-en yui-skin-sam yui3-skin-sam moodle-epfl-ch pagelayout-incourse course-523 context-2669301 cmid-1027172 category-67 category-53 drawer-open-left jsenabled">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/yui_combo_003.js"></script><script type="text/javascript" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex">
+        <header role="banner" class="header header-light">
+    
+            <div data-region="drawer-toggle" class="drawer d-inline-block">
+                <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="drawer-toggle" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">
+                    <svg class="icon" aria-hidden="true"><use xlink:href="#icon-chevron-right"></use></svg>
+                </button>
+                <a href="https://www.epfl.ch/" class="drawer-link open">
+                  <span class="text">Go to main site</span>
+                </a>
+            </div>
+    
+            <div class="header-light-content">
+                <a class="logo" href="https://moodle.epfl.ch/">
+                    <img src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/epfl-logo.svg" alt="EPFL - École polytechnique fédérale de Lausanne" class="img-fluid">
+                </a>
+                <h1>Moodle</h1>
+    
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <!-- custom_menu -->
+                    
+                    <!-- page_heading_menu -->
+                    
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item d-flex align-items-center nav-lang-short">
+  <ul>
+      <li>
+      <a href="https://moodle.epfl.ch/mod/quiz/review.php?attempt=137760&amp;cmid=1027172&amp;lang=fr" aria-label="Français ‎(fr)‎">FR</a>
+</li>
+      <li>
+      <span class="active" aria-label="English ‎(en)‎">EN</span>
+</li>
+      <li>
+      <a href="https://moodle.epfl.ch/mod/quiz/review.php?attempt=137760&amp;cmid=1027172&amp;lang=de" aria-label="Deutsch ‎(de)‎">DE</a>
+</li>
+  </ul>
+</li>
+                    <div class="d-none d-lg-block">
+                        
+                    </div>
+                    <!-- navbar_plugin_output -->
+                    <li class="nav-item">
+                        <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="900385" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-5fa82a050649d5fa82a04ebd8e4" aria-haspopup="true" aria-label="Show message window with no new messages" tabindex="0">
+                <i class="icon fa fa-comment fa-fw " title="Toggle messages menu" aria-label="Toggle messages menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5fa82a050649d5fa82a04ebd8e4" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Messages</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="https://moodle.epfl.ch/message/index.php?contactsfirst=1">New message
+            </a>
+        </div>
+        <a class="mark-all-read-button" href="#" role="button" title="Mark all as read" data-action="mark-all-read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://moodle.epfl.ch/message/edit.php?id=900385" title="Message preferences">
+            <i class="icon fa fa-cog fa-fw " title="Message preferences" aria-label="Message preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">No messages</div>
+
+            </div>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link" href="https://moodle.epfl.ch/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="900385" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-5fa82a05070965fa82a04ebd8e5" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <i class="icon fa fa-bell fa-fw " title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5fa82a05070965fa82a04ebd8e5" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="#" title="Mark all as read" data-action="mark-all-read" role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://moodle.epfl.ch/message/notificationpreferences.php?userid=900385" title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link" href="https://moodle.epfl.ch/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                    </li>
+                    <!-- user_menu -->
+                    <li class="nav-item d-flex align-items-center">
+                        <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class=" dropdown-toggle icon-no-margin" id="dropdown-1" aria-label="User menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Francisco Javier Blázquez Martínez</span><span class="avatars"><span class="avatar current"><img src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/f2.png" class="userpicture defaultuserpic" role="presentation" aria-hidden="true" width="35" height="35"></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+                                        <a href="https://moodle.epfl.ch/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://moodle.epfl.ch/user/profile.php?id=900385" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://moodle.epfl.ch/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-table fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Grades
+                                            </span>
+                                        </a>
+                                        <a href="https://moodle.epfl.ch/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-comment fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Messages
+                                            </span>
+                                        </a>
+                                        <a href="https://moodle.epfl.ch/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://moodle.epfl.ch/login/logout.php?sesskey=nHocxmZDUy" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                    </li>
+                </ul>
+                <!-- search_box -->
+            </div>
+        </header>
+    </nav>
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="mr-auto">
+                    <div class="page-context-header"><div class="page-header-headings"><h1>TCP/IP networking</h1></div></div>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav role="navigation" aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.epfl.ch/my/">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">My courses</li>
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.epfl.ch/course/view.php?id=523" title="TCP/IP networking">COM-407</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.epfl.ch/course/view.php?id=523#section-7">26 October - 1 November</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.epfl.ch/mod/quiz/view.php?id=1027172" aria-current="page" title="Quiz">[Graded]&nbsp;Lab3 - Part 1.2</a>
+                </li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="has-blocks mb-3">
+                    <div class="card" id="yui_3_17_2_1_1604856325177_165">
+                        <div class="card-body" id="yui_3_17_2_1_1604856325177_164">
+                            <span class="notifications" id="user-notifications"></span>
+                            <div role="main" id="yui_3_17_2_1_1604856325177_163"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Sunday, 8 November 2020, 18:01</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Sunday, 8 November 2020, 18:25</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">24 mins 4 secs</td></tr><tr><th class="cell" scope="row">Feedback</th><td class="cell">Your overall score for this part is between 90% and 100%. The exact grade as well as details for each question will be made 
+available as soon as the submission period for the quiz closes.<br></td></tr></tbody></table><form action="https://moodle.epfl.ch/mod/quiz/review.php?attempt=137760&amp;cmid=1027172" method="post" class="questionflagsaveform" autocomplete="off" id="yui_3_17_2_1_1604856325177_154"><div id="yui_3_17_2_1_1604856325177_162"><div id="q1" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_24"><input type="hidden" name="q1177990:1_:flagged" value="0"><input type="hidden" value="qaid=2829393&amp;qubaid=1177990&amp;qid=52006&amp;slot=1&amp;checksum=80176f633eda8d2c8cc35afb3e1f99f0&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:1_:flaggedcheckbox" name="q1177990:1_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content" id="yui_3_17_2_1_1604856325177_161"><div class="formulation clearfix" id="yui_3_17_2_1_1604856325177_160"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:1_:sequencecheck" value="3"><div class="qtext"><p>Lab3 Part1.2 Question 1:</p><p>Codes C and D use...<br></p></div><div class="ablock" id="yui_3_17_2_1_1604856325177_159"><div class="prompt">Select one:</div><div class="answer" id="yui_3_17_2_1_1604856325177_158"><div class="r0" id="yui_3_17_2_1_1604856325177_157"><input type="radio" name="q1177990:1_answer" disabled="disabled" value="0" id="q1177990:1_answer0" checked="checked"><label for="q1177990:1_answer0" class="m-l-1"><span class="answernumber">a. </span>TCP sockets</label> </div>
+<div class="r1"><input type="radio" name="q1177990:1_answer" disabled="disabled" value="1" id="q1177990:1_answer1"><label for="q1177990:1_answer1" class="m-l-1"><span class="answernumber">b. </span>UDP sockets</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>If you are not sure of your answer, you should do the Part1.1 of the lab.<br></p></div></div></div></div></div><div id="q2" class="que shortanswer deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_33"><input type="hidden" name="q1177990:2_:flagged" value="0"><input type="hidden" value="qaid=2829394&amp;qubaid=1177990&amp;qid=52007&amp;slot=2&amp;checksum=a871a57dfdd366726c28df48ff57db6b&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:2_:flaggedcheckbox" name="q1177990:2_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:2_:sequencecheck" value="3"><div class="qtext"><p>Lab3 Part1.2 Question 2:</p><p>How would you change the following line of CodeC to use an IPv6 TCP socket ?</p><p></p><xmp>sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</xmp><p></p><p>If you believe CodeC already uses an IPv6 socket, COPY and PASTE the above line on the following field.</p><p>If
+ you believe CodeC is not using an IPv6 socket, COPY, PASTE the above 
+line on the following field and MAKE the necessary CHANGES before 
+submitting. Do not change CodeC.<br></p></div><div class="ablock form-inline"><label for="q1177990:2_answer">Answer: <span class="answer"><input type="text" name="q1177990:2_answer" value="sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)" id="q1177990:2_answer" size="80" class="form-control d-inline" readonly="readonly"></span></label></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>You have several ways to find your answer, here is a list:</p><ul><li>[Beginner, lazy-student level] Google it ! Something like "How do I use Ipv6 sockets in Python ?" would do the trick.</li><li>[Good student level] <a href="https://youtu.be/A_CWPNdz8WA?t=346" target="_blank">Check the lecture !</a></li><li>[Advanced level] CodeC imports the module "socket". You can check the <a href="https://docs.python.org/3/library/socket.html" target="_blank">Python3 documentation for the "socket" module.</a></li><li>[Pro
+ level] Socket functions are system calls: they ask the OS to do 
+something. System calls are documented in the "Programmer's Manual" of 
+your OS and most languages keep the same syntax. You can check the 
+socket system-call documentation by typing <xmp>man socket</xmp> in a 
+terminal (Or "man 2 socket", "man 2" specifically asks to look in 
+section 2 of the manual, that regroups system calls. For more 
+information about man and manual sections, see <a href="https://en.wikipedia.org/wiki/Man_page" target="_blank">Wikipedia</a>.) Once you're in the manual page, use up/down arrows to navigate and press q to exit the manual. <br></li></ul></div></div></div></div></div><div id="q3" class="que multianswer deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Complete</div><div class="grade">Marked out of 2.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_42"><input type="hidden" name="q1177990:3_:flagged" value="0"><input type="hidden" value="qaid=2829395&amp;qubaid=1177990&amp;qid=52009&amp;slot=3&amp;checksum=b72e3064c83c4393bac0fb8ccbe81f95&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:3_:flaggedcheckbox" name="q1177990:3_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:3_:sequencecheck" value="3"><p>Lab3 Part1.2 Question 3:</p><p>Explain the output of the command by completing the following text:</p><p>The prompted table contains <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1604856325177_102"><label class="subq accesshide" for="q1177990:3_sub1_answer">Answer</label><input type="text" name="q1177990:3_sub1_answer" value="1" id="q1177990:3_sub1_answer" size="2" class="form-control mb-1" readonly="readonly"></span> row(s). The first row indicates that a <span class="subquestion" id="yui_3_17_2_1_1604856325177_104"><label class="subq accesshide" for="q1177990:3_sub2_answer">Answer</label><select id="q1177990:3_sub2_answer" disabled="disabled" class="select custom-select menuq1177990:3_sub2_answer" name="q1177990:3_sub2_answer"><option value=""></option><option value="0">UDP</option><option selected="selected" value="1">TCP</option></select></span> socket is <span class="subquestion" id="yui_3_17_2_1_1604856325177_106"><label class="subq accesshide" for="q1177990:3_sub3_answer">Answer</label><select id="q1177990:3_sub3_answer" disabled="disabled" class="select custom-select menuq1177990:3_sub3_answer" name="q1177990:3_sub3_answer"><option value=""></option><option value="0">receiving</option><option selected="selected" value="1">waiting for</option></select></span> <span class="subquestion" id="yui_3_17_2_1_1604856325177_108"><label class="subq accesshide" for="q1177990:3_sub4_answer">Answer</label><select id="q1177990:3_sub4_answer" disabled="disabled" class="select custom-select menuq1177990:3_sub4_answer" name="q1177990:3_sub4_answer"><option value=""></option><option selected="selected" value="0">connection request(s)</option><option value="1">data stream</option></select></span> on port <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1604856325177_110"><label class="subq accesshide" for="q1177990:3_sub5_answer">Answer</label><input type="text" name="q1177990:3_sub5_answer" value="5002" id="q1177990:3_sub5_answer" size="5" class="form-control mb-1" readonly="readonly"></span>.<br></p></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>To
+ be sure that you have the right amount of line(s), we advise you to 
+wait at least 30 seconds between any previous manipulation and the 
+moment when you launch the command.</p><p>For all the other answers, check the lecture.<br></p>
+
+<iframe src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/mP8wTnMCTR4.html" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe></div></div></div></div></div><div id="q4" class="que multianswer deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Complete</div><div class="grade">Marked out of 3.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_51"><input type="hidden" name="q1177990:4_:flagged" value="0"><input type="hidden" value="qaid=2829396&amp;qubaid=1177990&amp;qid=52015&amp;slot=4&amp;checksum=48f85808449063111f005a847b1e6a30&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:4_:flaggedcheckbox" name="q1177990:4_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:4_:sequencecheck" value="3"><p>Lab3 Part1.2 Question 4:</p><p></p><p>Explain the output of the command by completing the following text. In the following, the symbol </p><div class="php" style="font-family: monospace;"><span style="color: #339933;">&lt;</span>port<span style="color: #339933;">&gt;</span></div>represents a port number that depends on your computer. And <div class="php" style="font-family: monospace;"><span style="color: #339933;">&lt;</span>status<span style="color: #339933;">&gt;</span></div>represents the status of the socket.<br><p></p><p>The prompted table contains <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1604856325177_113"><label class="subq accesshide" for="q1177990:4_sub1_answer">Answer</label><input type="text" name="q1177990:4_sub1_answer" value="3" id="q1177990:4_sub1_answer" size="2" class="form-control mb-1" readonly="readonly"></span> row(s).&nbsp;</p><p>Take a look at the following lines:</p><br><p></p><img src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/imquiz.png" alt="Lines to study" class="img-responsive atto_image_button_text-bottom" width="560" height="345"><br><p></p><p></p><p></p><p></p><p></p><p>Line A gives the status of the <span class="subquestion" id="yui_3_17_2_1_1604856325177_115"><label class="subq accesshide" for="q1177990:4_sub2_answer">Answer</label><select id="q1177990:4_sub2_answer" disabled="disabled" class="select custom-select menuq1177990:4_sub2_answer" name="q1177990:4_sub2_answer"><option value=""></option><option selected="selected" value="0">server</option><option value="1">client</option></select></span> socket. It indicates that the socket has a/an <span class="subquestion" id="yui_3_17_2_1_1604856325177_117"><label class="subq accesshide" for="q1177990:4_sub3_answer">Answer</label><select id="q1177990:4_sub3_answer" disabled="disabled" class="select custom-select menuq1177990:4_sub3_answer" name="q1177990:4_sub3_answer"><option value=""></option><option value="0">waiting</option><option value="1">broken</option><option selected="selected" value="2">established</option><option value="3">queued</option><option value="4">dropped</option></select></span> connection with a remote end-point.</p><p>The remote end-point is running on the same computer, its socket's status is given by line <span class="subquestion" id="yui_3_17_2_1_1604856325177_119"><label class="subq accesshide" for="q1177990:4_sub4_answer">Answer</label><select id="q1177990:4_sub4_answer" disabled="disabled" class="select custom-select menuq1177990:4_sub4_answer" name="q1177990:4_sub4_answer"><option value=""></option><option selected="selected" value="0">B</option><option value="1">C</option></select></span>.</p><p>The remaining line indicates that the <span class="subquestion" id="yui_3_17_2_1_1604856325177_121"><label class="subq accesshide" for="q1177990:4_sub5_answer">Answer</label><select id="q1177990:4_sub5_answer" disabled="disabled" class="select custom-select menuq1177990:4_sub5_answer" name="q1177990:4_sub5_answer"><option value=""></option><option selected="selected" value="0">server</option><option value="1">client</option></select></span> is still <span class="subquestion" id="yui_3_17_2_1_1604856325177_123"><label class="subq accesshide" for="q1177990:4_sub6_answer">Answer</label><select id="q1177990:4_sub6_answer" disabled="disabled" class="select custom-select menuq1177990:4_sub6_answer" name="q1177990:4_sub6_answer"><option value=""></option><option value="0">receiving</option><option value="1">dropping</option><option selected="selected" value="2">listening for</option></select></span> <span class="subquestion" id="yui_3_17_2_1_1604856325177_125"><label class="subq accesshide" for="q1177990:4_sub7_answer">Answer</label><select id="q1177990:4_sub7_answer" disabled="disabled" class="select custom-select menuq1177990:4_sub7_answer" name="q1177990:4_sub7_answer"><option value=""></option><option value="0">data from a different client</option><option selected="selected" value="1">other incoming connection requests</option><option value="2">data from the same connection</option></select></span>.<br></p><p></p><p></p></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>Remember:</p><ul><li>That TCP sockets are bi-directional (full-duplex), once the connection is set, the same socket is used to receive/send data.</li><li>That
+ the client and the server are running in this case on the same 
+computer. System commands such as netstat will provide information for 
+both the client's and the server's perspective.</li></ul></div></div></div></div></div><div id="q5" class="que multianswer deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_60"><input type="hidden" name="q1177990:5_:flagged" value="0"><input type="hidden" value="qaid=2829397&amp;qubaid=1177990&amp;qid=52023&amp;slot=5&amp;checksum=e03d113cfde45c806b40338f8cccb1ea&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:5_:flaggedcheckbox" name="q1177990:5_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:5_:sequencecheck" value="3"><p>Lab3 Part1.2 Question5:</p><p>Once you launch CodeD, in how many lines does the SERVER print the received message ? <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1604856325177_128"><label class="subq accesshide" for="q1177990:5_sub1_answer">Answer</label><input type="text" name="q1177990:5_sub1_answer" value="3" id="q1177990:5_sub1_answer" size="2" class="form-control mb-1" readonly="readonly"></span></p><p>What line of the SERVER code can you change to manage the number of lines on the server's output ? <br>COPY and PASTE the unmodified corresponding line in the following field: <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1604856325177_130"><label class="subq accesshide" for="q1177990:5_sub2_answer">Answer</label><input type="text" name="q1177990:5_sub2_answer" value="data = connection.recv(16).decode()" id="q1177990:5_sub2_answer" size="39" class="form-control mb-1" readonly="readonly"></span><br></p></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>For the number of prompted lines:</p><ul><li>Be sure to use python3</li><li>We only count the lines that start with a "received:" preamble<br></li></ul><p>For the second part of the question: try the combo: TEST + DOC</p><ul><li>Test the server script by changing some of the values that appear</li><li>Read the documentation of some of the most important functions in the script (man + &lt;function&gt;)<br></li></ul></div></div></div></div></div><div id="q6" class="que multianswer deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Complete</div><div class="grade">Marked out of 2.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_69"><input type="hidden" name="q1177990:6_:flagged" value="0"><input type="hidden" value="qaid=2829398&amp;qubaid=1177990&amp;qid=52027&amp;slot=6&amp;checksum=583c771feaa2c4401549acde8ce3e2a8&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:6_:flaggedcheckbox" name="q1177990:6_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:6_:sequencecheck" value="4"><p>Lab3 Part1.2 Question 6:</p><p>When you launch CodeD, the following line of CodeC: </p><p></p><p></p><xmp> print("No more data from", addr) &lt;br&gt;</xmp><p></p><p>&nbsp;is <span class="subquestion" id="yui_3_17_2_1_1604856325177_133"><label class="subq accesshide" for="q1177990:6_sub1_answer">Answer</label><select id="q1177990:6_sub1_answer" disabled="disabled" class="select custom-select menuq1177990:6_sub1_answer" name="q1177990:6_sub1_answer"><option value=""></option><option value="0">executed</option><option selected="selected" value="1">not executed</option></select></span>. Indeed, to access that part of the IF THEN ELSE structure, function recv() must <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1604856325177_135"><label class="subq accesshide" for="q1177990:6_sub2_answer">Answer</label><input type="text" name="q1177990:6_sub2_answer" value="finish" id="q1177990:6_sub2_answer" size="16" class="form-control mb-1" readonly="readonly"></span>.</p><p></p><p>This happens </p><div class="answer"><div class="r0"><input type="radio" name="q1177990:6_sub3_answer" disabled="disabled" value="0" id="q1177990:6_sub3_answer0"><label for="q1177990:6_sub3_answer0">only when the recv() call has been waiting for more than 15minutes</label></div><div class="r1"><input type="radio" name="q1177990:6_sub3_answer" disabled="disabled" value="1" id="q1177990:6_sub3_answer1"><label for="q1177990:6_sub3_answer1">only when an error occurs</label></div><div class="r0"><input type="radio" name="q1177990:6_sub3_answer" disabled="disabled" value="2" id="q1177990:6_sub3_answer2"><label for="q1177990:6_sub3_answer2">only when an error occurs OR the connection is terminated OR the program receives a packet without any payload</label></div><div class="r1"><input type="radio" name="q1177990:6_sub3_answer" disabled="disabled" value="3" id="q1177990:6_sub3_answer3"><label for="q1177990:6_sub3_answer3">only when the connection is orderly terminated OR the program receives a packet without any payload</label></div><div class="r0"><input type="radio" name="q1177990:6_sub3_answer" disabled="disabled" value="4" id="q1177990:6_sub3_answer4" checked="checked"><label for="q1177990:6_sub3_answer4"><span lang="EN-US">only </span><span lang="en-CH">when
+the connection is orderly terminated</span><span lang="EN-US"> OR the requested number of bytes to receive
+from the stream socket was 0</span></label></div><div class="r1"><input type="radio" name="q1177990:6_sub3_answer" disabled="disabled" value="5" id="q1177990:6_sub3_answer5"><label for="q1177990:6_sub3_answer5">only if the client sends a packet with the SESSION_TERMINATED payload</label></div><div class="r0"><input type="radio" name="q1177990:6_sub3_answer" disabled="disabled" value="6" id="q1177990:6_sub3_answer6"><label for="q1177990:6_sub3_answer6">whenever there is no more byte to read from the buffer</label></div></div>.<p></p><p>In our situation, recv() <span class="subquestion" id="yui_3_17_2_1_1604856325177_137"><label class="subq accesshide" for="q1177990:6_sub4_answer">Answer</label><select id="q1177990:6_sub4_answer" disabled="disabled" class="select custom-select menuq1177990:6_sub4_answer" name="q1177990:6_sub4_answer"><option value=""></option><option value="0">returns</option><option value="1">crashes</option><option value="2">raises an exception</option><option selected="selected" value="3">blocks</option><option value="4">forces the program to exit</option><option value="5">starts a watchdog timer</option></select></span><br></p></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>"The manual is your friend !" (also known as "RTFM !"). Open a terminal and type:<br></p><xmp>man 2 recv</xmp><p>Then take a look at the "RETURN VALUE" section...</p><p>Remember
+ that in almost all programing languages, 0 is interpreted as "False" 
+and any other value including floating-point numbers, negative numbers, 
+strings, ... are interpreted as "True" <br></p><p><br></p></div></div></div></div></div><div id="q7" class="que truefalse deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">7</span></h3><div class="state">Complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_78"><input type="hidden" name="q1177990:7_:flagged" value="0"><input type="hidden" value="qaid=2829399&amp;qubaid=1177990&amp;qid=52032&amp;slot=7&amp;checksum=a696876a5c28ceb303e3446e4cd58987&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:7_:flaggedcheckbox" name="q1177990:7_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:7_:sequencecheck" value="3"><div class="qtext"><p>Lab3 Part1.2 Question7:</p><p>The server sends and receives data to/from the client on the same socket it is listening on.<br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1177990:7_answer" value="1" id="q1177990:7_answertrue" disabled="disabled"><label for="q1177990:7_answertrue" class="m-l-1">True</label> </div><div class="r1"><input type="radio" name="q1177990:7_answer" value="0" id="q1177990:7_answerfalse" disabled="disabled" checked="checked"><label for="q1177990:7_answerfalse" class="m-l-1">False</label> </div></div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>Check the lecture:</p><p><br><iframe src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/mP8wTnMCTR4_002.html" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe></p><p>"Listen" in the above question has the same meaning as the one of the LISTENING status of a socket or the listen() system call. <br></p></div></div></div></div></div><div id="q8" class="que multianswer deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">8</span></h3><div class="state">Complete</div><div class="grade">Marked out of 2.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1604856325177_87"><input type="hidden" name="q1177990:8_:flagged" value="0"><input type="hidden" value="qaid=2829400&amp;qubaid=1177990&amp;qid=52033&amp;slot=8&amp;checksum=bb15d21e1b2fde8d06c22224e9fdf019&amp;sesskey=nHocxmZDUy&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q1177990:8_:flaggedcheckbox" name="q1177990:8_:flagged" value="0"><input type="image" class="questionflagimage" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/unflagged.png" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1177990:8_:sequencecheck" value="4"><p>Lab3 Part.2 Question 8:</p><p>When you terminate CodeD (CTRL+C), the line <br></p><p></p><xmp>print("No more data from", addr) </xmp> is <span class="subquestion" id="yui_3_17_2_1_1604856325177_140"><label class="subq accesshide" for="q1177990:8_sub1_answer">Answer</label><select id="q1177990:8_sub1_answer" disabled="disabled" class="select custom-select menuq1177990:8_sub1_answer" name="q1177990:8_sub1_answer"><option value=""></option><option selected="selected" value="0">executed</option><option value="1">not executed</option></select></span>. Indeed, CTRL+C <span class="subquestion" id="yui_3_17_2_1_1604856325177_142"><label class="subq accesshide" for="q1177990:8_sub2_answer">Answer</label><select id="q1177990:8_sub2_answer" disabled="disabled" class="select custom-select menuq1177990:8_sub2_answer" name="q1177990:8_sub2_answer"><option value=""></option><option value="0">puts CodeD on hold</option><option value="1">sends a SIGKILL signal to CodeD, making it terminates</option><option selected="selected" value="2">raises a KeyboardInterrupt interruption in CodeD, making it terminates</option><option value="3">keeps CodeD running but steals all its network resources</option></select></span>. As a consequence, the socket is <span class="subquestion" id="yui_3_17_2_1_1604856325177_144"><label class="subq accesshide" for="q1177990:8_sub3_answer">Answer</label><select id="q1177990:8_sub3_answer" disabled="disabled" class="select custom-select menuq1177990:8_sub3_answer" name="q1177990:8_sub3_answer"><option value=""></option><option selected="selected" value="0">closed</option><option value="1">kept open</option></select></span> and the connection is <span class="subquestion" id="yui_3_17_2_1_1604856325177_146"><label class="subq accesshide" for="q1177990:8_sub4_answer">Answer</label><select id="q1177990:8_sub4_answer" disabled="disabled" class="select custom-select menuq1177990:8_sub4_answer" name="q1177990:8_sub4_answer"><option value=""></option><option value="0">kept open, but dead (the client will never answer any packet)</option><option value="1">kept open, and another program will receive the packets</option><option value="2">closed with an error</option><option selected="selected" value="3">orderly closed</option></select></span>.<br><p></p></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="generalfeedback"><p>For the first part, read carefully what happens in the terminal when you press CTRL+C.</p><p>Do
+ not use the integrated launch command of your IDE, run your python 
+script from the terminal with ```python3 CodeD/C.py``` and press CTRL+C 
+in the terminal.<br></p><p>For the second part, just compare what happens with your answers on question 6.<br></p></div></div></div></div></div><input type="hidden" name="sesskey" value="nHocxmZDUy"><div class="submitbtns"></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://moodle.epfl.ch/mod/quiz/view.php?id=1027172">Finish review</a></div></div>
+                            <div class="m-t-2 m-b-1">
+<div class="row">
+    <div class="col-md-4">        <div class="pull-left">
+                <a href="https://moodle.epfl.ch/mod/quiz/view.php?id=1027171&amp;forceview=1" id="prev-activity-link" class="btn btn-link" title="[Not graded] Lab - Part 1.1">◄ [Not graded] Lab - Part 1.1</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://moodle.epfl.ch/course/jumpto.php" class="form-inline" id="url_select_f5fa82a04ebd8e14">
+        <input type="hidden" name="sesskey" value="nHocxmZDUy">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="selected">Jump to...</option>
+                    <option value="/mod/choicegroup/view.php?id=1091925&amp;forceview=1">Lab group self-selection</option>
+                    <option value="/mod/forum/view.php?id=840219&amp;forceview=1">Important Announcements</option>
+                    <option value="/mod/forum/view.php?id=262461&amp;forceview=1">Question &amp; Answer Forum</option>
+                    <option value="/mod/page/view.php?id=415731&amp;forceview=1">Contact Information</option>
+                    <option value="/mod/page/view.php?id=415721&amp;forceview=1">Old Exams</option>
+                    <option value="/mod/resource/view.php?id=863801&amp;forceview=1">Exam booklet</option>
+                    <option value="/mod/resource/view.php?id=1087281&amp;forceview=1">intro.pdf</option>
+                    <option value="/mod/resource/view.php?id=1087283&amp;forceview=1">archi.pdf</option>
+                    <option value="/mod/resource/view.php?id=1092864&amp;forceview=1">archiSols.pdf</option>
+                    <option value="/mod/resource/view.php?id=1092755&amp;forceview=1">lab_intro</option>
+                    <option value="/mod/url/view.php?id=1093005&amp;forceview=1">Video: Intro-Archi-Part1</option>
+                    <option value="/mod/url/view.php?id=1093007&amp;forceview=1">Video: Intro-Archi-Part2</option>
+                    <option value="/mod/resource/view.php?id=1093417&amp;forceview=1">Video: lab_intro</option>
+                    <option value="/mod/quiz/view.php?id=1087274&amp;forceview=1">Quiz 1</option>
+                    <option value="/mod/folder/view.php?id=1031016&amp;forceview=1">Lab0</option>
+                    <option value="/mod/resource/view.php?id=1087290&amp;forceview=1">ip1.pdf</option>
+                    <option value="/mod/resource/view.php?id=1095613&amp;forceview=1">ip1Sols.pdf</option>
+                    <option value="/mod/url/view.php?id=1095693&amp;forceview=1">Video: ip1-part1</option>
+                    <option value="/mod/url/view.php?id=1095694&amp;forceview=1">Video: ip1-part2</option>
+                    <option value="/mod/quiz/view.php?id=1092358&amp;forceview=1">Quiz 2</option>
+                    <option value="/mod/assign/view.php?id=1092760&amp;forceview=1">Release lab 0 submission</option>
+                    <option value="/mod/resource/view.php?id=1098235&amp;forceview=1">mac.pdf</option>
+                    <option value="/mod/resource/view.php?id=1101443&amp;forceview=1">macSols.pdf</option>
+                    <option value="/mod/url/view.php?id=1098594&amp;forceview=1">Video: ip1-part3</option>
+                    <option value="/mod/url/view.php?id=1098595&amp;forceview=1">Video: ip1-end-mac-part1</option>
+                    <option value="/mod/assign/view.php?id=992138&amp;forceview=1">Submit lab 0 </option>
+                    <option value="/mod/resource/view.php?id=993793&amp;forceview=1">Lab0 Solution</option>
+                    <option value="/mod/quiz/view.php?id=1096070&amp;forceview=1">Quiz 3</option>
+                    <option value="/mod/folder/view.php?id=1098056&amp;forceview=1">Lab 1</option>
+                    <option value="/mod/url/view.php?id=1101499&amp;forceview=1">Video: mac-part2</option>
+                    <option value="/mod/url/view.php?id=1101500&amp;forceview=1">Video: mac-part3</option>
+                    <option value="/mod/quiz/view.php?id=1100146&amp;forceview=1">Quiz 4</option>
+                    <option value="/mod/resource/view.php?id=997527&amp;forceview=1">Lab1 Solution</option>
+                    <option value="/mod/assign/view.php?id=1101978&amp;forceview=1">Release lab 1 submission</option>
+                    <option value="/mod/assign/view.php?id=1033262&amp;forceview=1">Submit Lab1</option>
+                    <option value="/mod/resource/view.php?id=1034526&amp;forceview=1">transport.pdf</option>
+                    <option value="/mod/resource/view.php?id=1104169&amp;forceview=1">transportSols.pdf</option>
+                    <option value="/mod/url/view.php?id=1104216&amp;forceview=1">Video: mac-end-transport-part1</option>
+                    <option value="/mod/url/view.php?id=1104217&amp;forceview=1">Video: transport-part2</option>
+                    <option value="/mod/quiz/view.php?id=1102617&amp;forceview=1">Quiz 5</option>
+                    <option value="/mod/folder/view.php?id=996692&amp;forceview=1">Lab2</option>
+                    <option value="/mod/resource/view.php?id=1101453&amp;forceview=1">mcast.pdf</option>
+                    <option value="/mod/resource/view.php?id=1106618&amp;forceview=1">mcastSols.pdf</option>
+                    <option value="/mod/url/view.php?id=1106766&amp;forceview=1">Video: transport-part3</option>
+                    <option value="/mod/url/view.php?id=1106769&amp;forceview=1">Video: transport-end-multicast</option>
+                    <option value="/mod/quiz/view.php?id=1102618&amp;forceview=1">Quiz 6</option>
+                    <option value="/mod/assign/view.php?id=1106114&amp;forceview=1">Release lab 2 submission</option>
+                    <option value="/mod/assign/view.php?id=1106117&amp;forceview=1">Submit Lab2</option>
+                    <option value="/mod/resource/view.php?id=1038837&amp;forceview=1">ls.pdf</option>
+                    <option value="/mod/resource/view.php?id=1109276&amp;forceview=1">lsSols.pdf</option>
+                    <option value="/mod/url/view.php?id=1109447&amp;forceview=1">Video: ls-part1</option>
+                    <option value="/mod/url/view.php?id=1109448&amp;forceview=1">Video: ls-part2</option>
+                    <option value="/mod/quiz/view.php?id=1102622&amp;forceview=1">Quiz 7</option>
+                    <option value="/mod/resource/view.php?id=999647&amp;forceview=1">Lab2 solution</option>
+                    <option value="/mod/folder/view.php?id=999268&amp;forceview=1">Lab 3</option>
+                    <option value="/mod/quiz/view.php?id=1027171&amp;forceview=1">[Not graded] Lab - Part 1.1</option>
+                    <option value="/mod/quiz/view.php?id=1027173&amp;forceview=1">[Graded]&nbsp;Lab3 - Part 2</option>
+                    <option value="/mod/quiz/view.php?id=1027174&amp;forceview=1">[Graded] Lab3 - Part 3</option>
+                    <option value="/mod/quiz/view.php?id=1027175&amp;forceview=1">[Graded]&nbsp;Lab3 - Part 4</option>
+                    <option value="/mod/quiz/view.php?id=1027177&amp;forceview=1">[Graded] Lab3 - Part 5</option>
+                    <option value="/mod/quiz/view.php?id=1027176&amp;forceview=1">[Bonus] Lab3 - Part 6</option>
+                    <option value="/mod/url/view.php?id=1030078&amp;forceview=1">Lab3 - Link to the scoring system</option>
+                    <option value="/mod/resource/view.php?id=1109280&amp;forceview=1">cc1.pdf</option>
+                    <option value="/mod/resource/view.php?id=1111849&amp;forceview=1">cc1Sols1-59.pdf</option>
+                    <option value="/mod/url/view.php?id=1112011&amp;forceview=1">Video: ls-end-cc1-part1</option>
+                    <option value="/mod/url/view.php?id=1112014&amp;forceview=1">Video: cc1-part2</option>
+                    <option value="/mod/resource/view.php?id=1042494&amp;forceview=1">cc2.pdf</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="pull-right">
+                <a href="https://moodle.epfl.ch/mod/quiz/view.php?id=1027173&amp;forceview=1" id="next-activity-link" class="btn btn-link" title="[Graded]&nbsp;Lab3 - Part 2">[Graded]&nbsp;Lab3 - Part 2 ►</a>
+
+        </div>
+</div>
+</div>
+</div>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="d-print-none">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id="mod_quiz_navblock_title"&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock" class=" block block_fake  card mb-3" role="navigation" data-block="_fake" aria-labelledby="instance-0-header">
+
+    <div class="card-body">
+
+            <h5 id="instance-0-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton1" title="Complete" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton2" title="Complete" data-quiz-page="1" href="#q2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton3" title="Complete" data-quiz-page="2" href="#q3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton4" title="Complete" data-quiz-page="3" href="#q4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton5" title="Complete" data-quiz-page="4" href="#q5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton6" title="Complete" data-quiz-page="5" href="#q6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton7" title="Complete" data-quiz-page="6" href="#q7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton8" title="Complete" data-quiz-page="7" href="#q8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a href="https://moodle.epfl.ch/mod/quiz/review.php?attempt=137760&amp;cmid=1027172&amp;showall=0">Show one page at a time</a><a class="mod_quiz-next-nav" href="https://moodle.epfl.ch/mod/quiz/view.php?id=1027172">Finish review</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex " aria-hidden="false" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">COM-407</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/user/index.php?id=523" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-users fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">Participants</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/grade/report/index.php?id=523" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-table fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">Grades</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-0" data-key="8680" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">General</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-1" data-key="8681" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">14 September - 20 September</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-2" data-key="8682" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">21 September - 27 September</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-3" data-key="8683" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">28 September - 4 October</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-4" data-key="8684" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">5 October - 11 October</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-5" data-key="8685" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">12 October - 18 October</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-6" data-key="8686" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">19 October - 25 October</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action active" href="https://moodle.epfl.ch/course/view.php?id=523#section-7" data-key="8687" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body font-weight-bold">26 October - 1 November</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-8" data-key="8688" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">2 November - 8 November</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-9" data-key="8689" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">9 November - 15 November</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-10" data-key="8690" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">16 November - 22 November</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-11" data-key="8691" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">23 November - 29 November</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-12" data-key="8692" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">30 November - 6 December</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-13" data-key="8693" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">7 December - 13 December</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523#section-14" data-key="8694" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="523">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">14 December - 20 December</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">Dashboard</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/?redirect=0" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-home fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">Site home</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/calendar/view.php?view=month&amp;course=523" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-calendar fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">Calendar</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-file-o fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">Private files</span>
+                    </div>
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body">My courses</span>
+                    </div>
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=14221" data-key="14221" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">CS-433</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=15899" data-key="15899" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">MATH-397</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=15110" data-key="15110" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">MATH-351</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=15937" data-key="15937" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">HUM-412</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.epfl.ch/course/view.php?id=523" data-key="523" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                        </span>
+                        <span class="media-body ">COM-407</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+<footer id="page-footer"><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodle.epfl.ch/lib/requirejs.php/1604590163/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodle.epfl.ch/lib/javascript.php/1604590163/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://moodle.epfl.ch/lib/javascript.php/1604590163/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://moodle.epfl.ch/lib/javascript.php/1604590163/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://moodle.epfl.ch/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-140335560-1', {'siteSpeedSampleRate': 50});
+    ga('set', 'anonymizeIp', true);
+    ga('send', {'hitType' : 'pageview',
+                'page' : '/Syst%C3%A8mes+de+communication+%28SC%29/Master/TCP%2FIP+networking/quiz/%5BGraded%5D%C2%A0Lab3+-+Part+1.2',
+                'title' : 'TCP/IP networking'
+                });
+;
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/url/view.php?id=13541&redirect=1'); return false; };
+function legacy_activity_onclick_handler_2(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/url/view.php?id=13542&redirect=1'); return false; };
+function legacy_activity_onclick_handler_3(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/url/view.php?id=13544&redirect=1', '', 'width=1024,height=768,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_4(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/url/view.php?id=13545&redirect=1', '', 'width=1024,height=768,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_5(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/resource/view.php?id=1038837&redirect=1'); return false; };
+function legacy_activity_onclick_handler_6(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/resource/view.php?id=1109276&redirect=1'); return false; };
+function legacy_activity_onclick_handler_7(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/url/view.php?id=1109447&redirect=1'); return false; };
+function legacy_activity_onclick_handler_8(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/url/view.php?id=1109448&redirect=1'); return false; };
+function legacy_activity_onclick_handler_9(e) { e.halt(); window.open('https://moodle.epfl.ch/mod/resource/view.php?id=999647&redirect=1'); return false; };
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f5fa82a04ebd8e14').submit();
+            });
+        });
+    ;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+});
+M.util.js_pending('theme_boost/drawer');
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+  M.util.js_complete('theme_boost/drawer');
+});
+;
+M.util.js_pending('core/notification');
+require(['core/notification'], function(amd) {
+    amd.init(2669301, []);
+    M.util.js_complete('core/notification');
+});;
+M.util.js_pending('core/log');
+require(['core/log'], function(amd) {
+    amd.setConfig({"level":"warn"});
+    M.util.js_complete('core/log');
+});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"qtype_multianswer":{"name":"qtype_multianswer","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/question\/type\/multianswer\/module.js","requires":["base","node","event","overlay"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/moodle.epfl.ch\/lib\/javascript.php\/1604590163\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random5fa82a04ebd8e1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/moodle.epfl.ch\/question\/toggleflag.php", [{"src":"https:\/\/moodle.epfl.ch\/theme\/image.php\/epfl\/core\/1604590163\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/moodle.epfl.ch\/theme\/image.php\/epfl\/core\/1604590163\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random5fa82a04ebd8e1'); });
+ M.util.js_pending('random5fa82a04ebd8e2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5fa82a04ebd8e2'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5fa82a04ebd8e15'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#q3");  M.util.js_complete('random5fa82a04ebd8e15'); });
+ M.util.js_pending('random5fa82a04ebd8e16'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#q4");  M.util.js_complete('random5fa82a04ebd8e16'); });
+ M.util.js_pending('random5fa82a04ebd8e17'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#q5");  M.util.js_complete('random5fa82a04ebd8e17'); });
+ M.util.js_pending('random5fa82a04ebd8e18'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#q6");  M.util.js_complete('random5fa82a04ebd8e18'); });
+ M.util.js_pending('random5fa82a04ebd8e19'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#q8");  M.util.js_complete('random5fa82a04ebd8e19'); });
+ M.util.js_pending('random5fa82a04ebd8e20'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random5fa82a04ebd8e20'); });
+ M.util.js_pending('random5fa82a04ebd8e21'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5fa82a04ebd8e21'); });
+})();
+//]]>
+</script>
+</footer><div class="container">
+  <footer class="footer-light" role="contentinfo">
+    <div class="row">
+      <div class="col-6 mx-auto mx-md-0 mb-4 col-md-3 col-lg-2">
+        <a href="https://www.epfl.ch/">
+          <img src="[Graded]%C2%A0Lab3%20-%20Part%201.2_files/epfl-logo.svg" alt="EPFL - École polytechnique fédérale de Lausanne" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-9 col-lg-10 mb-4">
+        <div class="ml-md-2 ml-lg-5">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item">Contact</li>
+            <li class="list-inline-item text-muted pl-3"><small>EPFL CH-1015 Lausanne</small></li>
+            <li class="list-inline-item text-muted pl-3"><small>+41 21 693 11 11</small></li>
+          </ul>
+          <p class="footer-light-socials">
+            <small>Follow EPFL on social media</small>
+            <span>
+                <a href="https://www.facebook.com/epflcampus" title="Follow us on Facebook" class="social-icon social-icon-facebook social-icon-negative">
+  <svg class="icon" aria-hidden="true"><use xlink:href="#icon-facebook"></use></svg>
+  <span class="sr-only">Follow us on Facebook</span>
+</a>
+                <a href="https://twitter.com/epfl" title="Follow us on Twitter" class="social-icon social-icon-twitter social-icon-negative">
+  <svg class="icon" aria-hidden="true"><use xlink:href="#icon-twitter"></use></svg>
+  <span class="sr-only">Follow us on Twitter</span>
+</a>
+                <a href="https://instagram.com/epflcampus" title="Follow us on Instagram" class="social-icon social-icon-instagram social-icon-negative">
+  <svg class="icon" aria-hidden="true"><use xlink:href="#icon-instagram"></use></svg>
+  <span class="sr-only">Follow us on Instagram</span>
+</a>
+                <a href="https://www.youtube.com/user/epflnews" title="Follow us on Youtube" class="social-icon social-icon-youtube social-icon-negative">
+  <svg class="icon" aria-hidden="true"><use xlink:href="#icon-youtube"></use></svg>
+  <span class="sr-only">Follow us on Youtube</span>
+</a>
+                <a href="https://www.linkedin.com/school/epfl/" title="Follow us on LinkedIn" class="social-icon social-icon-linkedin social-icon-negative">
+  <svg class="icon" aria-hidden="true"><use xlink:href="#icon-linkedin"></use></svg>
+  <span class="sr-only">Follow us on LinkedIn</span>
+</a>
+            </span>
+          </p>
+          <div class="footer-legal">
+            <div class="footer-legal-links">
+              <a href="https://www.epfl.ch/accessibility">Accessibility</a>
+              <a href="https://www.epfl.ch/about/overview/overview/regulations-and-guidelines/">Disclaimer</a>
+            </div>
+            <div>
+              <p>© 2020 EPFL, all rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div><span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="icon-accessibility" viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm0 4.6a1.32 1.32 0 0 1 1.3 1.3A1.42 1.42 0 0 1 12 7.3 1.32 1.32 0 0 1 10.7 6 1.35 1.35 0 0 1 12 4.6zm5.1 5.6l-3.9.5v2.5l2.1 5.1a.76.76 0 1 1-1.4.6L12 14.2l-1.9 4.7a.76.76 0 0 1-1.4-.6l2.1-5.1v-2.5l-3.9-.5a.64.64 0 0 1-.5-.8c.1-.4.4-.7.7-.6l3.8.5h2.2l3.8-.5a.73.73 0 0 1 .7.6c0 .4-.2.8-.5.8z"></path></symbol><symbol id="icon-arrow-left" viewBox="0 0 16 16"><path d="M4.414 9l5.293 5.293-1.414 1.414L.586 8 8.293.293l1.414 1.414L4.414 7H16v2z"></path></symbol><symbol id="icon-arrow-right" viewBox="0 0 16 16"><path d="M11.586 7L6.293 1.707 7.707.293 15.414 8l-7.707 7.707-1.414-1.414L11.586 9H0V7h11.586z"></path></symbol><symbol id="icon-browse" viewBox="0 0 14 14"><path d="M0 5h3v3H0zm0 5h3v3H0zM0 0h3v3H0zm5 0h8v3H5zm0 5h8v3H5zm0 5h8v3H5z"></path></symbol><symbol id="icon-chevron-last-left" viewBox="0 0 24 24"><path fill="currentColor" d="M18 6.1l-2-2-7.2 7.3V5.1H6v13.8h2.8v-6.3l7.2 7.3 2-2-5.9-5.9z"></path></symbol><symbol id="icon-chevron-last-right" viewBox="0 0 24 24"><path fill="currentColor" d="M6 17.9l2 2 7.2-7.3v6.3H18V5.1h-2.8v6.3L8 4.1l-2 2 5.9 5.9z"></path></symbol><symbol id="icon-chevron-left" viewBox="0 0 24 24"><path fill="currentColor" d="M16.9 6.1l-1.9-2L7.1 12l7.9 7.9 1.9-2L11 12z"></path></symbol><symbol id="icon-chevron-right" viewBox="0 0 24 24"><path fill="currentColor" d="M7.1 17.9l1.9 2 7.9-7.9L9 4.1l-1.9 2L13 12z"></path></symbol><symbol id="icon-close" viewBox="0 0 14 14"><path d="M13 1.4L11.6 0 6.5 5.1 1.4 0 0 1.4l5.1 5.1L0 11.6 1.4 13l5.1-5.1 5.1 5.1 1.4-1.4-5.1-5.1z"></path></symbol><symbol id="icon-elements" viewBox="0 0 80 91.18"><path d="M39.99 31.18a20 20 0 0 0 0 40 19.39 19.39 0 0 0 3.34-.3v-6.84a13.14 13.14 0 0 1-3.34.48 13.32 13.32 0 0 1-12.85-10H59.7a20.43 20.43 0 0 0 .29-3.34 20 20 0 0 0-20-20zm0 6.67a13.31 13.31 0 0 1 12.88 10H27.14a13.31 13.31 0 0 1 12.85-10z"></path><path d="M46.59 11.77l7.06-7L48.94 0l-11.3 11.27a40 40 0 1 0 8.95.47zm-6.6 72.75a33.34 33.34 0 1 1 33.34-33.34 33.34 33.34 0 0 1-33.34 33.34z"></path></symbol><symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"></path></symbol><symbol id="icon-googleplus" viewBox="0 0 24 24"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83C10.47 5.69 8.89 5 7 5c-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16H7zm0 0l17 2h-3v3h-2v-3h-3v-2h3V8h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"></path></symbol><symbol id="icon-home" viewBox="0 0 11 12"><path d="M0 5l5.25-5 5.25 5v7H0z" fill-rule="evenodd"></path></symbol><symbol id="icon-info" viewBox="0 0 54 54"><path d="M30.4 43.8h-6.7V23.6h6.7v20.2zm0-26.9h-6.7v-6.7h6.7v6.7z"></path></symbol><symbol id="icon-instagram" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></symbol><symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"></path></symbol><symbol id="icon-lock" viewBox="0 0 10 15"><path d="M7 7V4a2 2 0 0 0-4 0v3h4zM1 7V4a4 4 0 1 1 8 0v3a1 1 0 0 1 1 1v7H0V8a1 1 0 0 1 1-1z"></path></symbol><symbol id="icon-mail-plane" viewBox="0 0 24 24"><path d="M0 12l11 3.1L18 7l-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339L11 17.946v-.769l-2-.56V24l4.473-6.031L18 22l6-22z"></path></symbol><symbol id="icon-planet" viewBox="0 0 24 24"><path d="M12 .3C5.5.3.3 5.5.3 12S5.5 23.7 12 23.7 23.7 18.5 23.7 12 18.5.3 12 .3zM2.6 7.9c1.1-2.5 3.1-4.4 5.6-5.4l.8-.4-.5.8C7.7 4.4 7 6.1 6.6 8.1v.2H2.4l.2-.4zm-.7 6.2c-.1-.7-.2-1.4-.2-2.1 0-.7.1-1.4.2-2.1v-.2h4.4v.3c-.1 1.3-.1 2.6 0 3.9v.3H2l-.1-.1zm6.3 7.5c-2.5-1-4.5-3-5.6-5.4l-.2-.4h4.2v.2c.4 1.9 1 3.7 1.9 5.2l.5.7-.8-.3zm3.1.9l-.5-.6c-1.2-1.5-2.2-3.5-2.7-5.8l-.1-.4h3.3v6.8zm0-8.2H7.8V14c-.1-1.4-.1-2.6 0-4.1v-.3h3.5v4.7zm0-6H8l.1-.4c.5-2.3 1.4-4.3 2.7-5.8l.5-.6v6.8zm4.5-5.9c2.5 1 4.5 3 5.6 5.4l.2.4h-4.2V8c-.4-1.9-1-3.7-1.9-5.2l-.5-.7.8.3zm-3.1-.9l.5.6c1.2 1.5 2.2 3.5 2.7 5.8l.1.4h-3.3V1.5zm0 8.2h3.5v.3c.1 1.4.1 2.6 0 4.1v.3h-3.5V9.7zm0 12.8v-6.8H16l-.1.4c-.5 2.3-1.4 4.3-2.7 5.8l-.5.6zm8.7-6.4c-1.1 2.5-3.1 4.4-5.6 5.4l-.8.4.4-.8c.9-1.5 1.5-3.3 1.9-5.2v-.2h4.2l-.1.4zm.6-1.8h-4.4V14c.1-1.3.1-2.6 0-3.9v-.3H22v.2c.1.7.2 1.4.2 2.1 0 .7-.1 1.4-.2 2.1v.1z"></path></symbol><symbol id="icon-search-bold" viewBox="0 0 17 17"><g stroke="currentColor" fill="none" fill-rule="evenodd"><path d="M11 11l4.243 4.243" stroke-width="3"></path><circle stroke-width="2" cx="7" cy="7" r="6"></circle></g></symbol><symbol id="icon-search" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205a9.68 9.68 0 0 0 1.857-5.711C19.461 4.365 15.096 0 9.73 0 4.365 0 0 4.365 0 9.73c0 5.366 4.365 9.73 9.73 9.73a9.678 9.678 0 0 0 5.487-1.698L21.455 24l2.354-2.354zM2.854 9.73c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877A6.884 6.884 0 0 1 2.854 9.73z"></path></symbol><symbol id="icon-triangle" viewBox="0 0 10 5"><path d="M.235.162h9.757l-4.879 4.77z" fill-rule="evenodd"></path></symbol><symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 3.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 4.557z"></path></symbol><symbol id="icon-upload" viewBox="0 0 14.2 14.2"><path d="M12.2 14.2H2c-1.1 0-2-.9-2-2V9.3c0-.3.3-.6.6-.6s.6.3.6.6v2.9c0 .4.4.8.8.8h10.1c.5 0 .8-.4.8-.8V9.3c0-.3.3-.6.6-.6s.6.3.6.6v2.9c.1 1.1-.8 2-1.9 2zM7.1 9.9c-.3 0-.6-.3-.6-.6V2L3.9 4.6c-.2.2-.6.2-.8 0s-.3-.6 0-.8L6.7.2c.1-.1.2-.2.4-.2s.3.1.4.2l3.6 3.6c.2.2.2.6 0 .8s-.6.2-.8 0L7.7 2v7.2c0 .4-.3.7-.6.7z"></path></symbol><symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></symbol><symbol id="icon-youtube" viewBox="0 0 24 24"><path d="M12 4s-6.254 0-7.814.418a2.503 2.503 0 0 0-1.768 1.768C2 7.746 2 12 2 12s0 4.254.418 5.814c.23.861.908 1.538 1.768 1.768C5.746 20 12 20 12 20s6.254 0 7.814-.418a2.505 2.505 0 0 0 1.768-1.768C22 16.254 22 12 22 12s0-4.254-.418-5.814a2.505 2.505 0 0 0-1.768-1.768C18.254 4 12 4 12 4zm0 2c2.882 0 6.49.134 7.297.35a.508.508 0 0 1 .353.353c.241.898.35 3.639.35 5.297s-.109 4.398-.35 5.297a.508.508 0 0 1-.353.353c-.805.216-4.415.35-7.297.35-2.881 0-6.49-.134-7.297-.35a.508.508 0 0 1-.353-.353C4.109 16.399 4 13.658 4 12s.109-4.399.35-5.299a.505.505 0 0 1 .353-.351C5.508 6.134 9.118 6 12 6zm-2 2.535v6.93L16 12l-6-3.465z"></path></symbol></svg></span>
+
+
+</body></html>
