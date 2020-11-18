@@ -1,30 +1,15 @@
 import sys
 import socket
 
-SERVER      = sys.argv[1]
-PORT        = int(sys.argv[2])
-LAPSE_TIME  = 1
-
-
+GROUP =     sys.argv[1]
+PORT  = int(sys.argv[2])
+CAMIPRO_ID= sys.argv[3]
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.connect((SERVER,PORT))
-#sock.setblocking(0)
-#sock.settimeout(LAPSE_TIME)
 
-message = "RESET:20"
-sock.sendall(message.encode())
+message  = CAMIPRO_ID
+message += input()
 
-lost = 0
-length = 1024	
-while True:
-	data = sock.recv(length)
-	if data:
-		break
-	else:
-		lost = lost + 1
-		time.sleep(LAPSE_TIME)
+sock.sendto(message.encode(), (GROUP, PORT))
 
-print(data.decode())
-print(lost)
 sock.close()
