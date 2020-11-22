@@ -17,6 +17,9 @@ def Lab4_Network():
     os.system('mn -c')
     os.system('rm /home/lca2/Desktop/lab4/run/*')
     os.system('rm /home/lca2/Desktop/lab4/logs/*')
+    os.system('kill $(ps -aux | pgrep zebra)')
+    os.system('kill $(ps -aux | pgrep ospf)')
+
 
     "Create an empty network and add nodes to it."
     net = Mininet()
@@ -119,23 +122,36 @@ def Lab4_Network():
     r1.cmd('sysctl -w net.ipv4.conf.r1-eth1.rp_filter=0')
     r1.cmd('sysctl -w net.ipv4.conf.r1-eth2.rp_filter=0')
     r1.cmd('sysctl -w net.ipv4.conf.r1-eth3.rp_filter=0')
+    r1.cmd('zebra -d -f /home/lca2/Desktop/lab4/configs/zebra_r1.cfg -i /home/lca2/Desktop/lab4/run/zebra_r1.pid -z /home/lca2/Desktop/lab4/run/frr_r1.api -u root -k')
+    r1.cmd('ospfd -d -f /home/lca2/Desktop/lab4/configs/ospfd_r1.cfg -i /home/lca2/Desktop/lab4/run/ospfd_r1.pid -z /home/lca2/Desktop/lab4/run/frr_r1.api -u root')
+    r1.cmd('ospf6d -d -f /home/lca2/Desktop/lab4/configs/ospf6d_r1.cfg -i /home/lca2/Desktop/lab4/run/ospf6d_r1.pid -z /home/lca2/Desktop/lab4/run/frr_r1.api -u root')
 
-    r2.cmd('ip addr add 10.10.24.2/24 dev r2-eth4')
     r2.cmd('sysctl -w net.ipv4.conf.r2-eth1.rp_filter=0')
     r2.cmd('sysctl -w net.ipv4.conf.r2-eth2.rp_filter=0')
     r2.cmd('sysctl -w net.ipv4.conf.r2-eth3.rp_filter=0')
     r2.cmd('sysctl -w net.ipv4.conf.r2-eth4.rp_filter=0')
-
+    r2.cmd('zebra -d -f /home/lca2/Desktop/lab4/configs/zebra_r2.cfg -i /home/lca2/Desktop/lab4/run/zebra_r2.pid -z /home/lca2/Desktop/lab4/run/frr_r2.api -u root -k')
+    r2.cmd('ospfd -d -f /home/lca2/Desktop/lab4/configs/ospfd_r2.cfg -i /home/lca2/Desktop/lab4/run/ospfd_r2.pid -z /home/lca2/Desktop/lab4/run/frr_r2.api -u root')
+    r2.cmd('ospf6d -d -f /home/lca2/Desktop/lab4/configs/ospf6d_r2.cfg -i /home/lca2/Desktop/lab4/run/ospf6d_r2.pid -z /home/lca2/Desktop/lab4/run/frr_r2.api -u root')
+	
     r3.cmd('sysctl -w net.ipv4.conf.r3-eth1.rp_filter=0')
     r3.cmd('sysctl -w net.ipv4.conf.r3-eth2.rp_filter=0')
+    r3.cmd('zebra -d -f /home/lca2/Desktop/lab4/configs/zebra_r3.cfg -i /home/lca2/Desktop/lab4/run/zebra_r3.pid -z /home/lca2/Desktop/lab4/run/frr_r3.api -u root -k')
+    r3.cmd('ospfd -d -f /home/lca2/Desktop/lab4/configs/ospfd_r3.cfg -i /home/lca2/Desktop/lab4/run/ospfd_r3.pid -z /home/lca2/Desktop/lab4/run/frr_r3.api -u root')
+    r3.cmd('ospf6d -d -f /home/lca2/Desktop/lab4/configs/ospf6d_r3.cfg -i /home/lca2/Desktop/lab4/run/ospf6d_r3.pid -z /home/lca2/Desktop/lab4/run/frr_r3.api -u root')
 
     r4.cmd('sysctl -w net.ipv4.conf.r4-eth1.rp_filter=0')
     r4.cmd('sysctl -w net.ipv4.conf.r4-eth2.rp_filter=0')
+    r4.cmd('zebra -d -f /home/lca2/Desktop/lab4/configs/zebra_r4.cfg -i /home/lca2/Desktop/lab4/run/zebra_r4.pid -z /home/lca2/Desktop/lab4/run/frr_r4.api -u root -k')
+    #r4.cmd('ospfd -d -f /home/lca2/Desktop/lab4/configs/ospfd_r4.cfg -i /home/lca2/Desktop/lab4/run/ospfd_r4.pid -z /home/lca2/Desktop/lab4/run/frr_r4.api -u root')
+    #r4.cmd('ospf6d -d -f /home/lca2/Desktop/lab4/configs/ospf6d_r4.cfg -i /home/lca2/Desktop/lab4/run/ospf6d_r4.pid -z /home/lca2/Desktop/lab4/run/frr_r4.api -u root')
 
     r5.cmd('sysctl -w net.ipv4.conf.r5-eth1.rp_filter=0')
     r5.cmd('sysctl -w net.ipv4.conf.r5-eth2.rp_filter=0')
     r5.cmd('sysctl -w net.ipv4.conf.r5-eth3.rp_filter=0')
-
+    r5.cmd('zebra -d -f /home/lca2/Desktop/lab4/configs/zebra_r5.cfg -i /home/lca2/Desktop/lab4/run/zebra_r5.pid -z /home/lca2/Desktop/lab4/run/frr_r5.api -u root -k')
+    r5.cmd('ospfd -d -f /home/lca2/Desktop/lab4/configs/ospfd_r5.cfg -i /home/lca2/Desktop/lab4/run/ospfd_r5.pid -z /home/lca2/Desktop/lab4/run/frr_r5.api -u root')
+    r5.cmd('ospf6d -d -f /home/lca2/Desktop/lab4/configs/ospf6d_r5.cfg -i /home/lca2/Desktop/lab4/run/ospf6d_r5.pid -z /home/lca2/Desktop/lab4/run/frr_r5.api -u root')
 
 
     os.system("chown lca2 /home/lca2/Desktop/lab4/logs/*")
