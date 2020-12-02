@@ -61,24 +61,22 @@ def run():
     
     info('\n** Adding Hosts\n')
     h1 = net.addHost('h1', ip='10.20.0.1/24', hostname='h1',  privateLogDir=True, privateRunDir=True, inMountNamespace=True, inPIDNamespace=True, inUTSNamespace=True)
-    # Space to add any commands for configuring the IP addresses
-    #
-    #
-    #
-    #
+    h2 = net.addHost('h2', ip='10.20.0.2/24', hostname='h2',  privateLogDir=True, privateRunDir=True, inMountNamespace=True, inPIDNamespace=True, inUTSNamespace=True)
+    h3 = net.addHost('h3', ip='10.20.1.3/24', hostname='h3',  privateLogDir=True, privateRunDir=True, inMountNamespace=True, inPIDNamespace=True, inUTSNamespace=True)
 
     info('\n** Adding Switches\n')
-    # Adding switches to the network
     sw1 = net.addSwitch('sw1')
 
-    
+    info( '*** Adding routers \n' )
+    r1 = net.addHost( 'r1' , ip='10.20.1.10/24')
+
     info('\n** Creating Links \n')
     link_h1sw1 = net.addLink( h1, sw1)
     link_h2sw1 = net.addLink( h2, sw1)
     link_r1sw1 = net.addLink( r1, sw1, intfName1='r1-eth0')
     link_h3r1 = net.addLink( r1, h3, intfName1='r1-eth1')
 
-    
+ 	   
     info('\n** Modifying Link Parameters \n')
     """
         Default parameters for links:
@@ -95,19 +93,25 @@ def run():
  		enable_red = False,
  		max_queue_size = None 
     """
-    link_h3r1.intf1.config( bw=10, enable_red=True ,  enable_ecn=True)
+    link_h3r1.intf1.config( bw=5, enable_red=True ,  enable_ecn=True)
 
     
     net.start()
+
     info('** Executing custom commands\n')
     output = net.nameToNode.keys
-    info( '*** Configuring hosts\n' )
+
+    info('\n** Configuring Hosts\n')
+    h1.cmd('ip route add default via 10.20.0.10')
+    h2.cmd('ip route add default via 10.20.0.10')
+    h3.cmd('ip route add default via 10.20.1.10')
+
+    info( '*** Configuring routers \n' )
+    r1.cmd('ip -4 addr flush dev r1-eth0')
+    r1.cmd('ip -4 addr flush dev r1-eth1')
     r1.cmd('ip addr add 10.20.0.10/24 dev r1-eth0')
-    # Space to add commands for configuring routing tables and default gateways
-    #
-	#
-	#
-	#
+    r1.cmd('ip addr add 10.20.1.10/24 dev r1-eth1')
+    r1.cmd('echo 1 > /proc/sys/net/ipv4/ip_forward')
 
 	#Enable Xterm window for every host
     info('** Enabling xterm for hosts only\n')
